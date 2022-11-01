@@ -1,13 +1,16 @@
 import './App.css';
-import Chart from './components/Chart';
+import { Suspense, lazy } from 'react';
+//lazy loading with suspense
+const Chart = lazy(() => import('./components/Chart'));
 
 function App() {
-  //need lazy and suspense in this component
-  return (
-    <div className="App">
-      <Chart/>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Suspense fallback={'Loading'}>
+                <Chart />
+            </Suspense>
+        </div>
+    );
 }
 
 export default App;

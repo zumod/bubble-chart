@@ -1,23 +1,23 @@
-import { USER_START, USER_SUCCESS, USER_FAIL } from './../types/user.types';
+import { DETAILS_START, DETAILS_SUCCESS, DETAILS_FAIL } from '../types/details.types';
 
 let initialState =  {
-    user: [], 
+    data: [], 
     error: null, 
     loading: false,
 }
 
-export const userReducer = (state= initialState, action) => {
+export const detailsReducer = (state= initialState, action) => {
     switch(action.type) {
-        case USER_START: 
+        case DETAILS_START: 
             return {...state, loading: true}
-        case USER_SUCCESS:
+        case DETAILS_SUCCESS:
             return {
                 ...state, 
                 loading: false, 
-                user: action.payload,
+                data: action.payload,
                 error: null
             }
-        case USER_FAIL:
+        case DETAILS_FAIL:
             return {
                 ...state, 
                 error: action.payload, 

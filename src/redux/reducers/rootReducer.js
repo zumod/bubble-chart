@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { userReducer } from "./user.reducer";
+import { detailsReducer } from "./details.reducer";
 
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage';
@@ -7,11 +7,11 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
     key: "root", 
     storage, 
-    whitelist: ["auth"]
+    whitelist: ["details"]
 }
 
 const rootReducer = combineReducers({
-    user: userReducer, 
+    details: detailsReducer, 
 })
 
 export default persistReducer(persistConfig, rootReducer);
