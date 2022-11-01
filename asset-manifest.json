@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bubble-chart/static/css/main.073c9b0a.css",
+    "main.js": "/bubble-chart/static/js/main.6ad03b0d.js",
+    "static/js/866.f25a7687.chunk.js": "/bubble-chart/static/js/866.f25a7687.chunk.js",
+    "static/js/533.1618aac1.chunk.js": "/bubble-chart/static/js/533.1618aac1.chunk.js",
+    "index.html": "/bubble-chart/index.html",
+    "main.073c9b0a.css.map": "/bubble-chart/static/css/main.073c9b0a.css.map",
+    "main.6ad03b0d.js.map": "/bubble-chart/static/js/main.6ad03b0d.js.map",
+    "866.f25a7687.chunk.js.map": "/bubble-chart/static/js/866.f25a7687.chunk.js.map",
+    "533.1618aac1.chunk.js.map": "/bubble-chart/static/js/533.1618aac1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.6ad03b0d.js"
+  ]
+}
